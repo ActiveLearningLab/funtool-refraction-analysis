@@ -1,0 +1,13 @@
+all:
+  selector_module: funtool_common_processes.grouping_selectors.default
+  selector_function: all
+  parameters: !!null
+
+
+full_rays_hash:
+  selector_module: funtool_common_processes.grouping_selectors.default
+  selector_function: by_measures_and_meta
+  parameters: 
+    metas: 
+      - full_rays_hash
+

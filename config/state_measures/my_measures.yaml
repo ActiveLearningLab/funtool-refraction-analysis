@@ -1,0 +1,48 @@
+piece_locations: 
+  measure_module: funtool_refraction_processes.state_measures.board_layout 
+  measure_function: piece_locations
+  analysis_selectors: 
+    - previous_level_action
+  group_selectors: !!null
+  parameters:
+    sort_by:
+      - groupings:
+          - level_instance_id:
+              values:
+                - meta: level_instance_id
+      - data: level_time
+
+full_rays: 
+  measure_module: funtool_refraction_processes.state_measures.rays
+  measure_function: full_rays
+  analysis_selectors: !!null
+  group_selectors: !!null
+  parameters: !!null
+
+full_rays_hash: 
+  measure_module: funtool_refraction_processes.state_measures.rays
+  measure_function: full_rays_hash
+  analysis_selectors: !!null
+  group_selectors: !!null
+  parameters: !!null
+
+full_rays_depth: 
+  measure_module: funtool_refraction_processes.state_measures.rays
+  measure_function: full_rays_depth
+  analysis_selectors: !!null
+  group_selectors: !!null
+  parameters: !!null
+
+full_operator_rays: 
+  measure_module: funtool_refraction_processes.state_measures.rays
+  measure_function: full_operator_rays
+  analysis_selectors: !!null
+  group_selectors: !!null
+  parameters: !!null
+
+min_ray_mag: 
+  measure_module: my_code.state_measures.my_measure_code
+  measure_function: least_ray
+  analysis_selectors: !!null
+  group_selectors: !!null
+  parameters: !!null

@@ -1,0 +1,29 @@
+count:
+  measure_module: funtool_common_processes.group_measures.default
+  measure_function: count
+  analysis_selectors: !!null
+  grouping_selectors:
+    - all
+    - projects_directory
+    - total_sprites
+  parameters: !!null
+
+max_depth:
+  measure_module: funtool_common_processes.group_measures.default
+  measure_function: maximum_value
+  analysis_selectors: !!null
+  grouping_selectors:
+    - full_rays_hash
+  parameters:
+    value_type: measures
+    value: full_rays_depth
+
+total_level_time:
+  measure_module: funtool_common_processes.group_measures.default
+  measure_function: maximum_value
+  analysis_selectors: !!null
+  grouping_selectors:
+    - level_instance_id
+  parameters:
+    value_type: data
+    value: level_time

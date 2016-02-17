@@ -1,0 +1,6 @@
+refraction1_level_data:
+  adaptor_module: funtool_refraction_processes.adaptors.level_xml
+  adaptor_function: import_level_information
+  parameters:
+    data_location: data/refraction1_levels.xml
+

@@ -1,0 +1,7 @@
+previous_level_action:
+  selector_module: funtool_common_processes.analysis_selectors.default
+  selector_function: previous
+  parameters :
+    grouping: level_instance_id
+    sort_by: 
+      - data: level_time

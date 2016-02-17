@@ -1,0 +1,19 @@
+- first_analysis:
+
+# Each process in the list should be formatted as
+# - process_type: process_name
+
+  - adaptor: sample_data
+  - adaptor: refraction1_level_data
+  - group_measure: total_level_time
+  - state_measure: piece_locations
+  - state_measure: full_rays
+  - state_measure: full_rays_hash
+  - state_measure: full_rays_depth
+  - state_measure: min_ray_mag
+  - reporter: interact
+  - grouping_selector: full_rays_hash
+  - state_measure: full_operator_rays
+#  - reporter: save_states_to_db
+  - group_measure: max_depth
+  - reporter: interact

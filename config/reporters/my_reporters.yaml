@@ -1,0 +1,27 @@
+sample_state:
+  reporter_module: funtool_common_processes.reporters.sampling_reporters
+  reporter_function: save_sample
+  parameters:
+    output_to:
+      - file
+#      - stdio
+    save_directory: output
+    filename: sample_state
+    print_depth: 4
+    
+interact:
+  reporter_module: funtool_common_processes.reporters.to_repl
+  reporter_function: interact
+
+save_states_to_db:
+  reporter_module: funtool_mysql_processes.reporters.mysql
+  reporter_function: insert_states
+  parameters:
+    db_connection:
+      config_file: config/private/mysql.yaml
+    db_table: moves
+    values:
+      move_id:
+        meta: move_id
+      level_time:
+        data: level_time

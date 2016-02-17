@@ -1,0 +1,17 @@
+k12_fall_2011:
+  adaptor_module: funtool_refraction_processes.adaptors.json_adaptor
+  adaptor_function: import_refraction_jsons
+  parameters:
+    data_location: data/refraction_k12.json
+
+k12_spring_2012:
+  adaptor_module: funtool_refraction_processes.adaptors.json_adaptor
+  adaptor_function: import_refraction_jsons
+  parameters:
+    data_location: data/refraction_k12_spring_2012.json
+
+sample_data:
+  adaptor_module: funtool_refraction_processes.adaptors.json_adaptor
+  adaptor_function: import_refraction_jsons
+  parameters:
+    data_location: data/sample_refraction.jsons
